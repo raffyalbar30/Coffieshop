@@ -9,7 +9,7 @@ function Pembayaran() {
   }
   const Hendlerbatal = () => {
     localStorage.removeItem("price");
-    window.location.href = "https://coffieshop-raffyalbar30.vercel.app/";
+    window.location.href = "http://localhost:5173/userpage";
   }
   return (
     <div>

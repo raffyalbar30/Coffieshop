@@ -23,7 +23,7 @@ function Carts({Handlercloseopencart}) {
 const Hendlercekout = () =>{
     const totalstore = localStorage.getItem("price");
     if (totalstore !== '0') {
-      window.location.href = "https://coffieshop-raffyalbar30.vercel.app/pembayaran";
+      window.location.href = "http://localhost:5173/pembayaran";
     } else {
        alert("maaf harap tambahkan barang terlebih dahulu!!!");
     }
