@@ -44,7 +44,11 @@ const menus = [
   return(
     <>
     
+<<<<<<< HEAD
         <div className={`ml-4 md:ml-28 md:mt-24`} >
+=======
+        <div className={`ml-4 md:ml-28 md:mt-24 `} >
+>>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
           <h1 className={`font-bold text-lg`}>PILIH MENU</h1>
           <div className="flex justify-between items-center mt-8">
               {menus.map((all)=> (

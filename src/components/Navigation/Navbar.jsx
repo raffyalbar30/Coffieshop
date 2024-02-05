@@ -6,16 +6,20 @@ import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useRef } from "react";
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
 import { useLogin } from "../../hooks/useLogin";
 
 
 
 
+=======
+>>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
 
 
 
 const Navbar = ({Hendleropenscart}) => {
+<<<<<<< HEAD
     const [isOpen,setisOpen] = useState(false);
     const { cart } = useSelector(all => all.cart);
     let menuRef = useRef();
@@ -24,6 +28,14 @@ const Navbar = ({Hendleropenscart}) => {
    
     
   
+=======
+    
+    const [isOpen,setisOpen] = useState(false);
+    const { cart } = useSelector(all => all.cart);
+    let menuRef = useRef();
+    
+
+>>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
    useEffect(() => {
       const Outside = (e) =>{
          if (!menuRef.current.contains(e.target)) {
@@ -46,7 +58,11 @@ const Navbar = ({Hendleropenscart}) => {
         localStorage.removeItem("token");
         localStorage.removeItem("price");
         localStorage.removeItem("message");
+<<<<<<< HEAD
         Navigatelogout("/login")
+=======
+        window.location.href = "https://coffieshop-raffyalbar30.vercel.app/login";
+>>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
      }
 
     
@@ -58,7 +74,10 @@ const Navbar = ({Hendleropenscart}) => {
                <div className="md:w-20 w-16 mx-4">
                    <img src="/img/logo.png" alt="" />
                </div>
+<<<<<<< HEAD
                      <p>{username}</p>
+=======
+>>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
                    <div className="flex items-center">
                          <div className="md:mr-8 mr-4 cursor-pointer hover:w-10 hover:rounded-full hover:shadow-md">
                          <HiUserCircle className="text-4xl mx-auto" onClick={Hendlerprofil}/>
