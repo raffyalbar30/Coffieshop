@@ -5,11 +5,7 @@ import { deleteitem } from '../../redux/slices/Cartslice';
 import { useDispatch } from 'react-redux'; 
 import Button from '../Buttons/Button';
 import { IoMdClose } from "react-icons/io";
-<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
-=======
-
->>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
 
 
 // Cart maping rendering from Menus data (menu) -> to storage Redux konsep
@@ -18,25 +14,20 @@ function Carts({Handlercloseopencart}) {
   const { cart } = useSelector(all => all.cart);
   const initialValue = 0;
   const total = cart.reduce((accumulator,current) => accumulator + current.price * current.qyt, initialValue)
-<<<<<<< HEAD
   localStorage.setItem("price", total);
   const Navigatepembayaran = useNavigate();
-=======
   const name = cart.filter((name,qyt) => (name, qyt));
   localStorage.setItem("price", total);
   localStorage.setItem("message", JSON.stringify(name));
->>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
   
 
 // conditional if placeorder onclick pages redirect to pembayaran pages if no stay haree alert 
 const Hendlercekout = () =>{
     const totalstore = localStorage.getItem("price");
     if (totalstore !== '0') {
-<<<<<<< HEAD
+
        Navigatepembayaran("/pembayaran"); 
-=======
       window.location.href = "http://localhost:5173/pembayaran";
->>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
     } else {
        alert("maaf harap tambahkan barang terlebih dahulu!!!");
     }
