@@ -8,10 +8,8 @@ import { Provider } from 'react-redux';
 import Store from './redux/Store';
 import Pembayaran from './pages/Pembayaranpage';
 import Userpagelogin from './pages/userpagelogin';
-<<<<<<< HEAD
 import Registerpage from './pages/Registerpage';
-=======
->>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
+
 
 
 
@@ -27,13 +25,11 @@ const router = createBrowserRouter([
     element: <Loginpage/>,
   },
   {
-<<<<<<< HEAD
     path: "/register",
     element: <Registerpage/>,
   },
   {
-=======
->>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
+
     path: "/userpage",
     element: <Userpagelogin/>,
     eror:<div>opps eror!!</div>

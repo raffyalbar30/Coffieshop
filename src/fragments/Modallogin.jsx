@@ -2,22 +2,16 @@ import React from 'react'
 import Modal from '../components/Modals/Modalspopup'
 import { IoMdClose } from "react-icons/io";
 import Button from '../components/Buttons/Button';
-<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
-=======
->>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
+
 
 
 
 function Modallogin({Handlerclosemodal}) {
-<<<<<<< HEAD
     const Navigatelogin = useNavigate();
     const Handlerloginuserpublic = () => {
           Navigatelogin("/login");
-=======
-    const Handlerloginuserpublic = () => {
-         window.location.href = "http://localhost:5173/login";
->>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
+
     }
   return (
       <>

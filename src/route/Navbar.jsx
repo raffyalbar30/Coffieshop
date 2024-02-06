@@ -1,10 +1,7 @@
 import React from 'react'
 import { HiUserCircle } from "react-icons/hi2";
-<<<<<<< HEAD
-=======
 import { IoHomeOutline } from "react-icons/io5";
 import { PiSignOutBold } from "react-icons/pi";
->>>>>>> eb8cec3f899655433a24cc571bf5acc7fd307395
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
 
 export default function Navbar({ Handlermodal}) {
