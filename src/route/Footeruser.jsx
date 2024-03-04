@@ -7,10 +7,10 @@ import { FaGithub } from "react-icons/fa";
 export default function Footeruser({Handlermodal}) {
   return (
      <>
-          <div className={`bg-slate-200 mt-5`} onClick={Handlermodal}>
+          <div className={`bg-slate-200 h-auto mt-24`} onClick={Handlermodal}>
              <div className='flex justify-center'>
                  <div className='mt-2 mb-2'>
-                      <p className='font-semibold'>© copyright by raffy albar</p>
+                      <p className='font-semibold'>© copyright by coffie-shop bys 1</p>
                       <div className='border-t border-slate-400'></div>
                       <div className='flex justify-center gap-x-4 mt-2'>
                       <a href="https://www.instagram.com/raffy_samaa/"><FaInstagram className='text-2xl' /></a>

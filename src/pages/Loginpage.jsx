@@ -32,7 +32,6 @@ const Url =`http://127.0.0.1:8000/api/auth/login`;
    
 
   }
-
   const Handleregister =() => {
        Navigateregister("/register")
   }
@@ -43,7 +42,7 @@ const Url =`http://127.0.0.1:8000/api/auth/login`;
           <p className={`text-sm text-red-500 font-semibold ${eror ? "default" : "hidden"}`}>username or password is incorrect</p>
           <Input placeholder="example@gmail.com" type="text" name="email" onChange={handelchange}/>
           <Input placeholder="*******" type="password" name="password"  onChange={handelchange} />
-          <Button onClick={Hendlelogin}>Login</Button>
+          <Button onClick={Hendlelogin} className={`mt-5`}>Login</Button>
            <div className="mb-6">
               <p className="font-semibold text-black">Don't have an account ? <span className="font-bold text-blue-700 cursor-pointer" onClick={Handleregister}>Register now</span></p>
            </div>

@@ -15,10 +15,10 @@ function Footer() {
      })
   return (
     <>
-        <div className={`bg-slate-200 mt-5 ${isloading ? 'animate-pulse' : ""}`}>
+        <div className={`bg-slate-200 mt-24 h-full${isloading ? 'animate-pulse' : ""}` }>
              <div className='flex justify-center'>
-                 <div className='mt-2 mb-2'>
-                      <p className='font-semibold'>© copyright by raffy albar</p>
+                 <div className='mt-12 mb-2'>
+                      <p className='font-semibold'>© copyright by team 1 bys</p>
                       <div className='border-t border-slate-400'></div>
                       <div className='flex justify-center gap-x-4 mt-2'>
                       <a href="https://www.instagram.com/raffy_samaa/"><FaInstagram className='text-2xl' /></a>

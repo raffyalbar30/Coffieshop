@@ -35,7 +35,7 @@ const Registerpage = () => {
           <Input placeholder="Name" type="text" name="nama" onChange={Handlechange}/>
           <Input placeholder="example@gmail.com" type="email" name="email" onChange={Handlechange}/>
           <Input placeholder="*******" type="password" name="password" onChange={Handlechange} />
-          <Button onClick={Handleregister}>Register</Button>
+          <Button onClick={Handleregister} className={`mt-5`}>Register</Button>
            <div className="mb-6">
               <p className="font-semibold text-black">have an account ? <span className="font-bold text-blue-700 cursor-pointer" onClick={navigatelogin}>Login now</span></p>
            </div>

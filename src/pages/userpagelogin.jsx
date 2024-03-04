@@ -16,7 +16,7 @@ const Userpagelogin = () =>{
   }
     return(
       <>
-      <Navbar Hendleropenscart={Hendleropenscart}/>
+      <Navbar Hendleropenscart={Hendleropenscart} />
       <Benner/>
       <Menus/>
       <Footer/>

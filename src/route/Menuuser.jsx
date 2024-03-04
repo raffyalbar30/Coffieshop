@@ -12,14 +12,14 @@ const menuuser = [
     {
       id: 2,
       img : "img/lemonice.png",
-      name : "Lemon Ice",
+      name : "Orange Jus",
       price : 5000,
 
     },
     {
       id: 3,
       img : "img/alpukatice.png",
-      name : "Alpukat Ice",
+      name : "Avocado Jus",
       price : 8000,
       
     }

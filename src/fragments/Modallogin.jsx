@@ -11,7 +11,6 @@ function Modallogin({Handlerclosemodal}) {
     const Navigatelogin = useNavigate();
     const Handlerloginuserpublic = () => {
           Navigatelogin("/login");
-
     }
   return (
       <>
@@ -23,8 +22,11 @@ function Modallogin({Handlerclosemodal}) {
              </div>
              <div className='mt-16'>
                  <img src="/img/logo.png" alt="" className='w-44 mx-auto' />
+                 <div className='mt-12 mb-8'>
                  <p className='text-sm font-semibold text-center'>Selamat datang di Coffieshop cilamaya !!!</p>
-                 <span className='text-sm font-semibold text-center'>Untuk bisa mengakses fitur silahkan login terlebih dahulu</span>
+                 <span className='text-sm font-semibold'>Untuk bisa mengakses fitur silahkan</span>
+                 <p className='text-sm font-semibold text-center'>login terlebih dahulu</p>
+                 </div>
                  <div className='flex justify-center'>
                  <Button onClick={ Handlerloginuserpublic}>Login</Button>
                  </div>

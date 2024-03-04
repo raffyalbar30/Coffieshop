@@ -7,7 +7,8 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { useLogin } from "../../hooks/useLogin";
+
+
 
 
 
@@ -16,14 +17,14 @@ import { useLogin } from "../../hooks/useLogin";
 
 
 const Navbar = ({Hendleropenscart}) => {
+   
 
     const [isOpen,setisOpen] = useState(false);
     const { cart } = useSelector(all => all.cart);
     let menuRef = useRef();
     const Navigatelogout = useNavigate();
-    const username = useLogin();
-   
-    
+    localStorage.setItem("order", JSON.stringify(cart))
+
   
    useEffect(() => {
       const Outside = (e) =>{
@@ -41,12 +42,12 @@ const Navbar = ({Hendleropenscart}) => {
     }
 
     const Handlerdashboard = () => {
-        window.location.href ="https://coffieshop-raffyalbar30.vercel.app/";
+        window.location.href ="http://localhost:5173/userpage";
     }
      const Handlerlogout = () => {
         localStorage.removeItem("token");
         localStorage.removeItem("price");
-        localStorage.removeItem("message");
+        localStorage.removeItem("order");
         Navigatelogout("/login")
 
      }
@@ -60,12 +61,17 @@ const Navbar = ({Hendleropenscart}) => {
                <div className="md:w-20 w-16 mx-4">
                    <img src="/img/logo.png" alt="" />
                </div>
-                     <p>{username}</p>
 
                    <div className="flex items-center">
+                     <div className="flex justify-between items-center">
+                         <div className="md:mr-6 mr-2">
+                         <i className="md:text-lg text-sm">Silahkan pesan menu</i>
+                         </div>
                          <div className="md:mr-8 mr-4 cursor-pointer hover:w-10 hover:rounded-full hover:shadow-md">
                          <HiUserCircle className="text-4xl mx-auto" onClick={Hendlerprofil}/>
                          </div>
+                     
+                     </div>
                          <div className="mr-3 flex relative cursor-pointer">
                          <PiShoppingCartSimpleLight onClick={Hendleropenscart} className="text-3xl"/>
                          <p className="text-base text-slate-900">{cart.length}</p>

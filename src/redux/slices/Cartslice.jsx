@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
+ 
 const initialState = {
-    cart: [],
-    qyt : [],
+    cart:  JSON.parse(localStorage.getItem("order")) || [],
+    qty : [],
 }
 
 
@@ -14,10 +15,10 @@ const AddcartSlice = createSlice({
             addTocart(state,action) {
                 const addfind = state.cart.findIndex(cartitem => cartitem.id === action.payload.id)
                 if (addfind>=0) {
-                    state.cart[addfind].qyt +=1
+                    state.cart[addfind].qty +=1
                     
                 }else{
-                    const addqyt = {...action.payload, qyt:1}
+                    const addqyt = {...action.payload, qty:1}
                     state.cart.push(addqyt);
                 }
             },

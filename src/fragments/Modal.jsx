@@ -1,14 +1,13 @@
 import React from 'react'
 import Modal from '../components/Modals/Modalspopup'
 import Carts from '../components/Cart/Carts'
-import Cartfalse from '../components/Cart/Cartfalse';
-
+import {  useSelector } from 'react-redux';
 
 
 function Modals({Handlercloseopencart}) {
   return (
      <Modal>
-           <Carts Handlercloseopencart={Handlercloseopencart}/> 
+        <Carts Handlercloseopencart={Handlercloseopencart}/>
      </Modal>
   )
 }
