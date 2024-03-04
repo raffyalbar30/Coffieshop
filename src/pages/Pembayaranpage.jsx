@@ -46,7 +46,7 @@ const Pembayaranpage = () => {
   
       
           const response = await axios.post(
-              'http://localhost:8000/api/order',
+              'https://rapicoffieshop.000webhostapp.com/api/order',
               data,
               {
                   headers: {
