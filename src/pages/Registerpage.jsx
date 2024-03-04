@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const Registerpage = () => {
   const Navigatelogin = useNavigate();
   const [register, setregister] = useState(null);
-  const Url = `https://rapicoffieshop.000webhostapp.com/api/user`;
+  const Url = `http://raffycoffieshopapi.my.id/api/user`;
   const Handlechange = (e) => {
     setregister({
         ...register,

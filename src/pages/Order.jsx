@@ -57,7 +57,7 @@ const Order = () => {
          try {
             
               await axios.get(
-                   'https://rapicoffieshop.000webhostapp.com/api/order',
+                   'http://raffycoffieshopapi.my.id/api/order',
                  {
                      headers: {
                          Authorization:  "Bearer " + localStorage.getItem('token') ,
